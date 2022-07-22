@@ -26,6 +26,6 @@ func (i *UserInfo) GetBirthday() time.Time {
 	return i.Birthday
 }
 
-func (i *UserInfo) isAnAudit() bool {
+func (i *UserInfo) IsAnAudit() bool {
 	return i.Age > 18
 }
