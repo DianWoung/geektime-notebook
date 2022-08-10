@@ -1,4 +1,4 @@
-package main
+package mutex
 
 func main() {
 	//易错的四种场景

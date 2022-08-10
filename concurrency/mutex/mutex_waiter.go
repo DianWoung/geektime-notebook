@@ -1,4 +1,4 @@
-package main
+package mutex
 
 import (
 	"fmt"
@@ -6,13 +6,6 @@ import (
 	"sync/atomic"
 	"time"
 	"unsafe"
-)
-
-const (
-	mutexLocked = 1 << iota // mutex is locked
-	mutexWoken
-	mutexStarving
-	mutexWaiterShift = iota
 )
 
 type Mutex struct {
